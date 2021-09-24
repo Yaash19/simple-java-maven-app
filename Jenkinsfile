@@ -6,7 +6,7 @@ podTemplate(containers: [
         args: '30d'
         ),
 		
-		volumes: [
+	volumes: [
 		persistentVolumeClaim(
         mountPath: '/root/.m2/repository', 
         claimName: 'jenkins-pv-claim', 
